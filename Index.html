@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Flash con Ruffle</title>
+    <script src="https://ruffle.rs/release/ruffle.js"></script>
+</head>
+<body>
+    <h1>Bienvenido a mi web de juegos Flash</h1>
+    <div id="game"></div>
+
+    <script>
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        document.getElementById("game").appendChild(player);
+
+        player.load("papasdonuteria_102.swf"); // Carga tu archivo SWF
+    </script>
+</body>
+</html>
